@@ -4,14 +4,89 @@
 	border: 0;
 }
 
+
+/* ACCUEIL*/
+
+a{
+    color: #FAF7F5;
+}
+
+.text_accueil{
+    background-color: rgb(25,74, 55);
+    color: #FAF7F5;
+}
+
+.text_vert{
+    color: rgb(25,74, 55);
+}
+
+/* NOS ACTIONS */
+
+.nos_actions{
+    color: #FAF7F5;
+    background-color: rgb(25,74, 55);
+}
+
+/* VOYAGES SOLIDAIRES */
+
+.text_blue{
+    color: #9BD6CA;
+}
+
+/* PARRAINAGES */
+
+#parrainages{
+    background-color: rgb(155, 214, 202, 0.25);
+}
+
+#fond_vert{
+    background-color: rgb(25,74, 55, 0.9);
+    color:#FAF7F5;
+}
+
+
+/*NOS PARTENAIRES */
+
+.text-border{
+    -webkit-text-stroke: 1px rgb(25,74, 55);
+    color: transparent; 
+}
+
+.nos_partenaires{
+    color: #FAF7F5;
+    background-color: rgb(25,74, 55);
+}
+
+.separateur_vert{
+    background-color:#194A37;
+    height: 2rem;
+}
+
+/*CONTACTEZ-NOUS*/
+
+.formulaire_blue{
+    background-color: rgb(155, 214, 202, 0.9);
+    color: #FAF7F5;
+}
+
+button{
+    background-color: #F2A74A;
+    color: #FAF7F5;
+}
+
+
+
+
+
 h2{
     font-family: 'Kalam', cursive;
     text-transform: uppercase;
 }
 
 
+
 body{
-    background-color: rgb(250, 247, 245);
+    background-color: #FAF7F5;
 }
 
 p{
