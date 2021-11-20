@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class AccueilTCSController extends AbstractController
+
 {
     #[Route('/accueiltcs', name: 'accueil_t_c_s')]
 

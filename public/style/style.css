@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h2{
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+}
+
+
+body{
+    background-color: rgb(250, 247, 245);
+}
+
+p{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
