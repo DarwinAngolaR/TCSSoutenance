@@ -2,73 +2,104 @@
 {% block body %}
 	<div>
 		<div><img src="/img/TCS_accueil.jpg" alt="Centre Xam Xamle" width="100%"></div>
-		<div class="">
-			<p>Si tous les gars du monde devenaient de bons copains et marchaient la main dans la main, le bonheur serait pour demain</p>
+
+		{# ACCUEIL  #}
+		<div class="phrase_accueil">
+			<p class="text_kalam">" Si tous les gars du monde devenaient de bons copains et marchaient la main dans la main, le bonheur serait pour demain "</p>
 		</div>
 		<div class="text_accueil">
-			<h2>
-				Terres et Cultures Solidares et née en 2013</h2>
+			<h2 id="titre_tcs">Terres et Cultures Solidares et née en 2013</h2>
 			<p>Notre objectif est d’agir pour mettre en place des actions pérennes sur le terrain en s’appuyant sur les compétences et les savoir-faire de chacun à partir des besoins exprimés par les acteurs locaux.</p>
 		</div>
-		<div>
+		<div class="margin_video">
 			<video src="" autoplay></div>
-			<div>
-				<p class="text_vert">Les résultats d’aujourd’hui dépassent nos espérances car jamais nous n’aurions imaginé une telle évolution et la construction d’autant de projets en si peu de temps.
+			<div class="text_video">
+				<span class="text_resultat text_vert">Les résultats d’aujourd’hui
+				</span>
+				<p class="text_vert text_inline">dépassent nos espérances car jamais nous n’aurions imaginé une telle évolution et la construction d’autant de projets en si peu de temps.
 				</p>
 			</div>
 		</div>
+
+		{# NOS ACTIONS #}
 		<div class="nos_actions">
-			<h2>nos actions</h2>
+			<h2 class="titre">nos actions</h2>
 			<div class="sliderActions"></div>
 		</div>
-		<div>
+
+		{# VOYAGES SOLIDAIRES #}
+		<div class="voyages_display">
 			<div>
-				<h2 class="text_blue">voyage solidaires</h2>
-				<p class="text_vert">Terres et Cultures Solidaires a pour partenaire un groupe de locaux qui s'organisent pour vous permettre de découvrir le Sénégal loin des clichés et des a priori. Nous nous proposons de vous mettre en contact avec des locaux qui sont en mesure de vous faire découvrir le pays de l'intérieur en partageant la vie des villageois</p>
-				<span class="text_vert">Une autre manière de voyager...</span>
+				<h2 class="text_blue titre titre_taill">voyage solidaires</h2>
+				<p class="text_vert taille_text ">Terres et Cultures Solidaires a pour partenaire un groupe de locaux qui s'organisent pour vous permettre de découvrir le Sénégal loin des clichés et des a priori. Nous nous proposons de vous mettre en contact avec des locaux qui sont en mesure de vous faire découvrir le pays de l'intérieur en partageant la vie des villageois.</p>
+				<span class="text_vert text_kalam position_voyages">Une autre manière de voyager...</span>
 			</div>
 			<div class="sliderVoyage"></div>
-			<div id="parrainages">
-				<h2 class="text_vert">parrainages</h2>
-				<p class="text_vert">Parrainer un enfant, c'est lui permettre de devenir acteur de sa vie.</p>
-				<div>
-					<img src="/img/Damme avec enfant.png" alt="dame avec enfant">
+		</div>
+
+		{# PARRAINAGES #}
+		<div id="parrainages">
+			<h2 class="text_vert titre titre_taill text_center">parrainages</h2>
+			<p class="text_vert text_center width_text">Parrainer un enfant, c'est lui permettre de devenir acteur de sa vie.</p>
+			<div class="parrainages_display">
+				<div class="width_block">
+					<div class="img_width_gauche">
+						<img src="/img/Damme avec enfant.png" alt="dame avec enfant" class="img_width">
+					</div>
 					<div id="fond_vert">
-						<p>Parrainer un enfant c'est l'accompagner dans son parcours scolaire le plus longtemps possible afin de lui permettre d'accéder à des études supérieures ou à une qualification. C'est l'aider à construire sa vie d'adulte.</p>
+						<spam class="text_width">Parrainer un enfant</spam>
+						<p class="display_inline">
+							c'est l'accompagner dans son parcours scolaire le plus longtemps possible afin de lui permettre d'accéder à des études supérieures ou à une qualification. C'est l'aider à construire sa vie d'adulte.</p>
 						<a href="">&#x25B6;</a>
 					</div>
 				</div>
-				<div>
-					<img src="/img/Enfants souriants.png" alt="Enfants souriants"></div>
-				<div id="fond_vert">
-					<p>Le parrainage est aujourd'hui une action importante puisqu'il permet à des enfants d'être scolarisés. Le pari des enseignants de l'école des parents de Yayeme est d'ouvrir les portes de l'école à TOUS les enfants quelque soit leurs origines, leur handicap, leur âge, les revenus des parents.</p>
-					<a href="">&#x25B6;</a>
-				</div>
-			</div>
-			<div>
-				<h2 class="text-border">nos partenaires</h2>
-				<div class="nos_partenaires">
-					<p>Leur soutien est fondamental pour pérenniser nos actions</p>
-				</div>
-				<div>
-					<img src="/img/logo_Ville_de_Panazol.png" alt="Logo Ville de Panazol">
-					<img src="/img/Logo_Communne_de_Diofior.png" alt="Logo Commune de Diofior">
-					<img src="/img/logo_fundation_engie.png" alt="Logo Fondation Engie">
-					<img src="/img/logo_Vestical_Team.png" alt="Logo Vertical Team ">
-					<img src="/img/logo_nouvelle_aquitaine.png" alt="Logo Region Nouvelle Aquitaine">
-					<img src="/img/Logo_credit_mutuel.png" alt="Logo Crédit Mutuel">
-				</div>
-			</div>
-			<div class="separateur_vert"></div>
-			<div>
-				<img src="/img/Enfants souriants II.png" alt="Enfants souriants II">
-				<h2 class="text_blue">contactez-nous</h2>
-				<div class="formulaire_blue">
-					<form action="" method="post"></form>
-					<label for="email">e-mail</label>
-					<input type="email" id="mail" name="user_email">
-					<button type="submit">envoyer</button>
+				<div class="width_block">
+					<div class="img_width_droit">
+						<img src="/img/Enfants souriants.png" alt="Enfants souriants" class="img_width">
+					</div>
+					<div id="fond_vert">
+						<spam class="text_width">Le parrainage est une action
+						</spam>
+						<p class="display_inline">
+							importante puisqu'il permet à des enfants d'être scolarisés. Le pari des enseignants de l'école des parents de Yayeme est d'ouvrir les portes de l'école à TOUS les enfants quelque soit leurs origines, leur handicap, leur âge, les revenus des parents.</p>
+						<a href="">&#x25B6;</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	{% endblock %}
+
+		{# NOS PARTENAIRES #}
+		<div class="section_partenairs">
+			<h2 class="text-border titre">nos partenaires</h2>
+			<div class="display_flex">
+				<div class="nos_partenaires">
+					<p>Leur soutien est fondamental pour pérenniser nos actions</p>
+				</div>
+				<div class="logo_flex">
+					<img src="/img/logo_Ville_de_Panazol.png" alt="Logo Ville de Panazol" class="logo">
+					<img src="/img/Logo_Communne_de_Diofior.png" alt="Logo Commune de Diofior" class="logo">
+					<img src="/img/logo_fundation_engie.png" alt="Logo Fondation Engie" class="logo">
+					<img src="/img/logo_Vestical_Team.png" alt="Logo Vertical Team " class="logo">
+					<img src="/img/logo_nouvelle_aquitaine.png" alt="Logo Region Nouvelle Aquitaine" class="logo">
+					<img src="/img/Logo_credit_mutuel.png" alt="Logo Crédit Mutuel" class="logo">
+				</div>
+			</div>
+		</div>
+		<div class="separateur_vert"></div>
+
+		{# CONTACT #}
+		<div class="display_contact">
+			<img src="/img/Enfants souriants II.png" alt="Enfants souriants II" class="img_enfant">
+
+			<div class="display_form">
+				<h2 class="text_blue titre text_center margin_text">contactez-nous</h2>
+				<div class="formulaire_blue">
+					<form action="" method="post"></form>
+					<label for="email" placeholder="Votre mail" id="contact_color"></label>
+					<input type="email" id="mail" name="user_email" class="input_contac">
+				</div>
+				<button type="submit" class="button_contact">envoyer</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -7,54 +7,202 @@
 
 /* ACCUEIL*/
 
-a{
+.titre{
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: bolder;
+    letter-spacing: .3vw;
+}
+
+.phrase_accueil{
     color: #FAF7F5;
+    position: relative;
+    top: -55vw;
+    left: 62vw;
+    width: 35%;
+}
+
+.text_kalam{
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+
+a{
+    color: #F2A74A;
+    text-decoration: none;
 }
 
 .text_accueil{
-    background-color: rgb(25,74, 55);
+    background-color: rgb(25,74, 55, 0.9);
     color: #FAF7F5;
+    position: relative;
+    top: -30vw;
+    left: 55vw;
+    width: 40%;
+    padding: 70px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2)
+}
+
+#titre_tcs{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    padding-bottom: 8%;
 }
 
 .text_vert{
     color: rgb(25,74, 55);
 }
 
+.text_inline{
+    display: inline;
+    line-height: 2.5rem;  /*verificar responsive */
+}
+
+.margin_video{
+    padding: 5%;
+}
+
+.text_resultat{
+    font-family: 'Kalam', cursive;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.text_video{
+    width: 65%;
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    margin-left: 12%;
+    margin-bottom: 8%;
+}
+
+
+
 /* NOS ACTIONS */
 
 .nos_actions{
     color: #FAF7F5;
     background-color: rgb(25,74, 55);
+    padding: 10%;
 }
 
 /* VOYAGES SOLIDAIRES */
 
+.voyages_display{
+    display: flex;
+    justify-content: space-around ;
+    padding: 6%;
+}
+
 .text_blue{
     color: #9BD6CA;
+}
+
+.taille_text{
+    width: 60%;
+    padding: 7%;
+    font-size: 1.5vw;
+    line-height: 2.7rem;
+}
+
+.position_voyages{
+    position: relative;
+    left: 30vw;
+    font-size: 2vw;
 }
 
 /* PARRAINAGES */
 
 #parrainages{
     background-color: rgb(155, 214, 202, 0.25);
+    padding: 8%;
 }
 
 #fond_vert{
     background-color: rgb(25,74, 55, 0.9);
     color:#FAF7F5;
+    padding: 10%;
+    width: 70%;
+    border-radius: 10px;
+    line-height: 1.8vw;
 }
 
+.text_center{
+    text-align: center;
+}
+
+.width_text{
+    margin: 0% 36%;
+    font-size: 1.2vw;
+}
+
+.parrainages_display{
+    display: flex;
+    justify-content: space-around ;
+    padding: 5%;
+}
+
+.img_width_gauche{
+    width: 50%;
+}
+
+.img_width_droit{
+    width: 50%;
+    height: 575px;
+}
+
+.img_width{
+    width: 100%;
+}
+
+.width_block{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display_inline{
+    display:inline;
+}
+
+.text_width{
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
 
 /*NOS PARTENAIRES */
+
+.section_partenairs{
+    padding: 6%;
+}
+
+.display_flex{
+    display: flex;
+}
 
 .text-border{
     -webkit-text-stroke: 1px rgb(25,74, 55);
     color: transparent; 
+    margin-bottom: 5%;
 }
 
 .nos_partenaires{
     color: #FAF7F5;
     background-color: rgb(25,74, 55);
+    width: 80%;
+    padding: 8%;
+    font-size: 3vw;
+    font-weight: 100;
 }
 
 .separateur_vert{
@@ -62,28 +210,74 @@ a{
     height: 2rem;
 }
 
+.logo{
+    width: 25%;
+}
+
+.logo_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    gap: 10%;
+}
+
+
 /*CONTACTEZ-NOUS*/
 
 .formulaire_blue{
     background-color: rgb(155, 214, 202, 0.9);
     color: #FAF7F5;
+    padding: 10%;
+    margin-left: -25%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: end;
+}
+
+.margin_text{
+    margin-bottom: 8%;
+}
+
+.display_contact{
+    display: flex;
+    padding: 4%;
+}
+
+.img_enfant{
+    width: 46%;
+    border-radius: 10px;
+}
+
+.display_form{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact_color::placeholder { 
+    color: blue; 
+}
+
+.input_contact{
+    background-color: transparent;
+}
+
+.button_contact{
+    width: 30%;
+    padding: 5px;
+    margin: 5% 0 15% 68%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 button{
     background-color: #F2A74A;
     color: #FAF7F5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-
-h2{
-    font-family: 'Kalam', cursive;
-    text-transform: uppercase;
-}
-
-
 
 body{
     background-color: #FAF7F5;
