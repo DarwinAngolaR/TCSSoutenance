@@ -299,3 +299,71 @@ button{
     width: 15%;
     padding: 3%;
 }
+
+
+/*****/
+/**** PAGE NOS ACTIONS *****/
+/*****/
+
+
+/* HEADER */
+
+.img_header{
+    width: 100%;
+}
+
+.titre_tcs{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.6vw;
+    text-align: right;
+    position: relative;
+    top: -40vw;
+    left: 61vw;
+    color: #FAF7F5;
+    width: 35%;
+    letter-spacing: .2vw;
+}
+
+.text_sineSaloum{
+    font-family: 'Kalam', cursive;
+    font-weight: lighter;
+}
+
+.p_header{
+    width: 35%;
+    position: relative;
+    text-align: right;
+    top: -38vw;
+    left: 61vw;
+    color: #FAF7F5;
+    line-height: 2.2vw;
+    font-size: 1.3vw;
+    margin-bottom: -35vw;
+}
+
+.boder_header{
+    background-color:  rgb(25,74, 55);
+    padding: 2vw;
+    color: #FAF7F5;
+    text-align: right;
+    font-family: 'Kalam', cursive;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    position: relative;
+    margin-bottom: 14vw;
+}
+
+/* Un BANC, UNE ARBRE */
+
+.background_bleu{
+    background-color: rgb(155, 214, 202);
+}
+
+.un_banc{
+    color: #FAF7F5;
+}
+
+.padding{
+    padding: 3%;
+}
