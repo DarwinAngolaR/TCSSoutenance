@@ -23,4 +23,10 @@ class AccueilTCSController extends AbstractController
     {
         return $this->render('accueil_tcs/home.html.twig');
     }
+
+    #[Route('/nos_actions', name: 'nos_actions')]
+    public function nos_actions()
+    {
+        return $this->render('accueil_tcs/nos_actions.html.twig');
+    }
 }
