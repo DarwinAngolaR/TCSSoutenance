@@ -4,6 +4,13 @@
 	border: 0;
 }
 
+body{
+    background-color: #FAF7F5;
+}
+
+p{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
 
 /* ACCUEIL*/
 
@@ -123,7 +130,7 @@ a{
 
 #parrainages{
     background-color: rgb(155, 214, 202, 0.25);
-    padding: 8%;
+    padding: 3%;
 }
 
 #fond_vert{
@@ -183,7 +190,7 @@ a{
 /*NOS PARTENAIRES */
 
 .section_partenairs{
-    padding: 6%;
+    padding: 4%;
 }
 
 .display_flex{
@@ -199,8 +206,7 @@ a{
 .nos_partenaires{
     color: #FAF7F5;
     background-color: rgb(25,74, 55);
-    width: 80%;
-    padding: 8%;
+    padding: 5%;
     font-size: 3vw;
     font-weight: 100;
 }
@@ -211,15 +217,15 @@ a{
 }
 
 .logo{
-    width: 25%;
+    width: 20%;
 }
 
 .logo_flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5%;
-    gap: 10%;
+    padding: 3%;
+    gap: 15%;
 }
 
 
@@ -241,12 +247,13 @@ a{
 
 .display_contact{
     display: flex;
-    padding: 4%;
+    padding: 3% 3% 0 3%;
 }
 
 .img_enfant{
     width: 46%;
     border-radius: 10px;
+    max-height: 28vw;
 }
 
 .display_form{
@@ -256,11 +263,14 @@ a{
 }
 
 #contact_color::placeholder { 
-    color: blue; 
+    color:#FAF7F5; 
 }
 
-.input_contact{
+.input_contac{
     background-color: transparent;
+    border-bottom: 2px solid #FAF7F5;
+    width: 50%;
+    padding: 2px;
 }
 
 .button_contact{
@@ -279,10 +289,13 @@ button{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body{
-    background-color: #FAF7F5;
+/* FOOTER */
+
+.footer{
+    background-color: rgb(25,74, 55);
 }
 
-p{
-    font-family: 'Zen Maru Gothic', sans-serif;
+.logo_footer{
+    width: 15%;
+    padding: 3%;
 }
