@@ -91,8 +91,6 @@ a{
     margin-bottom: 8%;
 }
 
-
-
 /* NOS ACTIONS */
 
 .nos_actions{
@@ -366,4 +364,43 @@ button{
 
 .padding{
     padding: 3%;
+}
+
+.img_chantal{
+    width: 85%;
+    border-radius: 5px;
+    position: relative;
+    left: -10vw;
+    margin: 3vw 0;
+}
+
+.sous_titre{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 2vw;
+}
+
+.block_gauche{
+    width: 60%;
+}
+
+.block_droit{
+    width: 65%;
+}
+
+.line_h{
+    line-height: 2vw;
+    width: 75%;
+}
+
+.arbre_baobab{
+    width: 52%;
+    position: relative;
+    top: 24vw;
+    left: -18vw;
+}
+
+.fleche{
+    width: 25%;
+    position: relative;
+    left: 20vw;
 }
