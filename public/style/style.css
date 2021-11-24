@@ -404,3 +404,78 @@ button{
     position: relative;
     left: 20vw;
 }
+
+/* GIE */
+
+.text_gie_droit{
+    padding: 10%;
+}
+
+.block_gie_gauche{
+    color: #FAF7F5;
+    background-color: rgb(25,74, 55);
+    padding: 6%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.gie_img{
+    width: 100%;
+}
+
+/* PARRAINAGES */
+
+.block_droitParrain{
+    width: 80%;
+}
+
+.img_dansant{
+    width: 80%;
+    margin: 15% 5%;
+}
+
+.img_petite{
+    width: 40%;
+    position: relative;
+    top: -14vw;
+    left: 5vw;
+    border-radius: 5px;
+    margin-bottom: -12vw;
+}
+
+.text_educa{
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-left: 15vw;
+    line-height: 2.3vw;
+    width: 64%;
+}
+
+.text_parrain{
+    margin-left: 30vw;
+    font-size: 1.3vw;
+    line-height: 2.2vw;
+    margin-top: -2vw;
+    width: 45%;
+}
+
+.text_ecoles{
+    font-size: 2.5vw;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+.img_jouant{
+    margin-left: 23vw;
+    width: 55%;
+    border-radius: 5px;
+}
+
+.parrain_blockGauche{
+    margin: 0 5%;
+}
+
+.text_enf{
+    font-size: 1.3vw
+}
