@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -46,6 +48,16 @@ class User
      * @ORM\Column(type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Voyages::class, mappedBy="author")
+     */
+    private $voyages;
+
+    public function __construct()
+    {
+        $this->voyages = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -120,6 +132,36 @@ class User
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
         $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Voyages[]
+     */
+    public function getVoyages(): Collection
+    {
+        return $this->voyages;
+    }
+
+    public function addVoyage(Voyages $voyage): self
+    {
+        if (!$this->voyages->contains($voyage)) {
+            $this->voyages[] = $voyage;
+            $voyage->setAuthor($this);
+        }
+
+        return $this;
+    }
+
+    public function removeVoyage(Voyages $voyage): self
+    {
+        if ($this->voyages->removeElement($voyage)) {
+            // set the owning side to null (unless already changed)
+            if ($voyage->getAuthor() === $this) {
+                $voyage->setAuthor(null);
+            }
+        }
 
         return $this;
     }
