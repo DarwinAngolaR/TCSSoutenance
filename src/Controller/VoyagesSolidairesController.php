@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class VoyagesSolidairesController extends AbstractController
+class VoyagessolidairesController extends AbstractController
 {
-    #[Route('/voyages/solidaires', name: 'voyages_solidaires')]
+    #[Route('/voyagessolidaires', name: 'voyagessolidaires')]
     public function index(): Response
     {
-        return $this->render('voyages_solidaires/index.html.twig', [
-            'controller_name' => 'VoyagesSolidairesController',
+        return $this->render('voyagessolidaires/index.html.twig', [
+            'controller_name' => 'VoyagessolidairesController',
         ]);
     }
 }
