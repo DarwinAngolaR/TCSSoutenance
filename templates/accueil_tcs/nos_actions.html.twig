@@ -127,11 +127,52 @@
 
 {# GOURMANDISES #}
 <section class="padding display_flex">
-	<div>
-		<h2 class="titre text_blue">les gourmandises du sine saloum</h2>
-		<p class=" text_vert">Grâce à un écosystème naturel très diversifié, le Sine Saloum est une terre où poussent arachides, mangues, bananes, papayes, fruits de palmiers roniers, etc. Les Gourmandises du Sine Saloum permettent ainsi à plusieurs personnes de travailler directement à temps plein en période de production tout en augmentant le niveau de vie de tous les intervenants. Ces fruits séchés sont faits à partir de fruits gorgées de soleil. Aucun ajout! Pour vous permettre de les apprécier encore plus, un livre de cuisine est mis en place. Il comporte des recettes faciles à élaborer qui ont été inventées, améliorées ou transformées par Chantal passionnée de cuisine et qui vit une grande partie de l'année à Fimela. Les ingrédients rentrant dans la composition des plats proposés comme les mangues et bananes séchées, les cacahuètes, les noix de cajou, le bissap proviennent tous de cultures locales.
-		</p>
-		<p class="text_vert">Les « Gourmandises du Sine Saloum » ont vu le jour en 2015 pour valoriser et conserver ces fruits et légumes tout en réduisant les pertes après récolte.</p>
+	<div class="block_gourmanGauche">
+		<h2 class="titre text_blue text_center space_bottom">les gourmandises du sine saloum</h2>
+		<div class="text_vert line_height">
+			<p>Grâce à un écosystème naturel très diversifié, le Sine Saloum est une terre où poussent arachides, mangues, bananes, papayes, fruits de palmiers roniers, etc.
+			</p>
+			<p>Les Gourmandises du Sine Saloum permettent ainsi à plusieurs personnes de travailler directement à temps plein en période de production tout en augmentant le niveau de vie de tous les intervenants.
+			</p>
+			<p>Ces fruits séchés sont faits à partir de fruits gorgées de soleil. Aucun ajout! Pour vous permettre de les apprécier encore plus, un livre de cuisine est mis en place. Il comporte des recettes faciles à élaborer qui ont été inventées, améliorées ou transformées par Chantal passionnée de cuisine et qui vit une grande partie de l'année à Fimela.
+			</p>
+			<p>Les ingrédients rentrant dans la composition des plats proposés comme les mangues et bananes séchées, les cacahuètes, les noix de cajou, le bissap proviennent tous de cultures locales.
+			</p>
+		</div>
+		<p class="text_vert text_gourman">Les « Gourmandises du Sine Saloum » ont vu le jour en 2015 pour valoriser et conserver ces fruits et légumes tout en réduisant les pertes après récolte.</p>
 	</div>
-	<div class="background_bleu"></div>
+	<div class="background_bleu block_gourman">
+		<div class="width_slider">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="/img/Bananes.png" class="d-block w-100" alt="Bananes">
+					</div>
+					<div class="carousel-item">
+						<img src="/img/Bissap.png" class="d-block w-100" alt="Bissap">
+					</div>
+					<div class="carousel-item">
+						<img src="/img/Kinkeliba.png" class="d-block w-100" alt="Kinkeliba">
+					</div>
+					<div class="carousel-item">
+						<img src="/img/Mangues.png" class="d-block w-100" alt="Mangues">
+					</div>
+					<div class="carousel-item">
+						<img src="/img/Moringa.png" class="d-block w-100" alt="Moringa">
+					</div>
+					<div class="carousel-item">
+						<img src="/img/Noix_de_cajou.png" class="d-block w-100" alt="Noix de cajou">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
 </section>{% endblock %}

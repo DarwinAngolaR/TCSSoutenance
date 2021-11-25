@@ -626,6 +626,28 @@ button{
 
 /* GOURMANDISES */
 
+.line_height{
+    line-height: 1.8vw;
+}
 
+.space_bottom{
+    margin-bottom: 10%;
+}
 
+.block_gourmand{
+    width: 45%;
+}
 
+.block_gourmanGauche{
+    width: 60%;
+    padding: 8%;
+}
+
+.text_gourman{
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 6vw;
+    width: 115%;
+    text-align: center;
+    margin-left: -10vh;
+}
