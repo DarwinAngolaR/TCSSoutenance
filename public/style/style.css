@@ -479,3 +479,153 @@ button{
 .text_enf{
     font-size: 1.3vw
 }
+
+
+/*  BOUTIQUE SOLIDAIRE */
+
+.padding_boutique{
+    padding: 3% 0 3% 3%;
+}
+
+.img_merchan{
+    width: 45%;
+}
+
+.text_nee{
+    width: 55%;
+    background-color: white;
+    padding: 6%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: 28vw;
+    top: -10vw;
+    margin-bottom: -12vw;
+}
+
+.text_date{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    letter-spacing: .1vw;
+    margin-bottom: 1.5vw;
+}
+
+.img_boutique{
+    width: 50%;
+}
+
+.text_yayeme{
+    font-weight: bold;
+}
+
+.text_jeunes{
+    margin-left: 1vw;
+    font-weight: lighter;
+}
+
+.text_marcel{
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    font-size: 1.5vw;
+    width: 45%;
+    text-align: right;
+    letter-spacing: .2vw;
+}
+
+.div_marcel{
+    position: relative;
+    top: -5vw;
+    margin-bottom: -4vw;
+}
+
+.div_icons{
+    width: 90%;
+    background-color: white;
+    padding: 3% 3% 2% 3%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.img_icon{
+    width: 55%;
+}
+
+.icons_group{
+    display: flex;
+    font-weight: lighter;
+    font-size: 1vw;
+}
+
+.text_light{
+    font-weight: lighter;
+}
+
+.text_besoin{
+    font-weight: lighter;
+    font-size: 1.3vw;
+    margin: 2vw 0;
+}
+
+.text_aide{
+    font-weight: 500;
+    padding: 0 10%;
+    font-size: 1.2vw;
+}
+
+.back_img{
+    background-image: url(/img/Boutique_Solidaire.jpg);
+    background-position: 50% 0;
+    background-size: 155%;
+    width: 100%;
+    margin: -3vw 0;
+}
+
+.titreBS{
+    margin-left: -17vw;
+    background-color: #faf7f562;
+    padding: 3%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* ECOLE BUISSONNIERER */
+
+.text_toit{
+    font-size: 1.5vw;
+    margin-left: 5%;
+}
+
+.text_ecoleBui{
+    width: 36%;
+    background-color: #faf7f5bd;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    padding: 3%;
+    position: relative;
+    top: -12vw;
+    margin-bottom: -12vw;
+    border-radius: 5px;
+}
+
+.backgroudimg{
+    margin: 0 5%;
+    background-image: url(/img/Ecole_Buissoniere.jpg);
+    height: 40vw;
+    border-radius: 5px;
+    background-position: 0% 95%;
+    background-size: cover;
+}
+
+.negrita{
+    font-weight: 600;
+}
+
+.margin_left{
+    margin-left: 5%;
+}
+
+/* GOURMANDISES */
+
+
+
+
