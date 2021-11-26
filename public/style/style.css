@@ -138,6 +138,11 @@ a{
     background-size: contain;
 }
 
+.padding_left{
+    padding-left: 5vw;
+    width: 113%;
+}
+
 #parrainages{
     background-color: rgb(155, 214, 202, 0.25);
     padding: 3%;
