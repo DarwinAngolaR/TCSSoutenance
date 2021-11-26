@@ -366,7 +366,7 @@ button{
     letter-spacing: .2vw;
     position: relative;
     margin-bottom: 14vw;
-    top: 13vw;
+    top: 14vw;
 }
 
 /* Un BANC, UNE ARBRE */
@@ -507,7 +507,6 @@ button{
 .text_enf{
     font-size: 1.3vw
 }
-
 
 /*  BOUTIQUE SOLIDAIRE */
 
@@ -678,4 +677,124 @@ button{
     width: 115%;
     text-align: center;
     margin-left: -10vh;
+}
+
+/*****/
+/**** PAGE AGIR ENSEMBLE *****/
+/*****/
+
+/* HEADER */
+
+.img_formation{
+    width: 100%;
+}
+
+.div_agir{
+    background-color: rgb(25,74, 55);
+    color: #FAF7F5;
+    padding: 5%;
+    width: 40%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    position: relative;
+    top: -20vw;
+    left: 54vw;
+    margin-bottom: -20vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.letter_light{
+    font-weight: 300;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.div_porcent{
+    width: 35%;
+    padding: 3%;
+    position: relative;
+    left: 58vw;
+    border-radius: 5px;
+}
+
+.text_porcent{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.text_porcent2{
+    font-size: 1.3vw;
+    padding-left: 7vw;
+}
+
+.img_arbre{
+    position: relative;
+    left: 66vw;
+    width: 20%;
+    top: -2vw; 
+    margin-bottom: -8vh;
+}
+
+.icon_arbre{
+    width: 100%;
+}
+
+/* PARTENARIAT */
+
+.display_partenariat{
+    justify-content: center;
+}
+
+.text_partenariat{
+    background-color: #FAF7F5;
+    border: 7vw solid rgb(25,74, 55);
+    padding: 5% 7%;
+    width: 85%;
+    color: rgb(25,74, 55);
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.icon_etoile{
+    width: 5%;
+    margin: 5%;
+}
+
+.text_etoile{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-left: 10vw;
+    font-size: 1.3vw;
+}
+
+.titre_etoile{
+    font-size: 1.6vw;
+    margin-bottom: 5%;
+}
+
+/* P. SENEGAL */
+
+.part_senegal{
+    background-color: rgb(25,74, 55);
+    width: 40%;
+    padding: 5%;
+    color: #FAF7F5;
+    font-size: 1.3vw;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.titre_part{
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    font-weight: 500;
+    letter-spacing: .2vw;
+}
+
+.margin_gauche{
+    margin: 4vh 0 0 4vh;
 }
