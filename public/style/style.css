@@ -361,6 +361,7 @@ button{
     letter-spacing: .2vw;
     position: relative;
     margin-bottom: 14vw;
+    top: 2vw;
 }
 
 /* Un BANC, UNE ARBRE */
@@ -378,42 +379,44 @@ button{
 }
 
 .img_chantal{
-    width: 85%;
+    width: 75%;
     border-radius: 5px;
     position: relative;
-    left: -10vw;
     margin: 3vw 0;
 }
 
 .sous_titre{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 2vw;
+    margin-left: 15vw;
 }
 
 .block_gauche{
     width: 60%;
 }
 
-.block_droit{
-    width: 65%;
-}
-
 .line_h{
     line-height: 2vw;
-    width: 75%;
+    width: 60%;
+    margin-left: 15vw;
 }
 
 .arbre_baobab{
-    width: 52%;
+    width: 75%;
     position: relative;
-    top: 24vw;
-    left: -18vw;
+    top: 25vw;
+}
+
+.video_banc_arbre{
+    width: 110%;
+    margin-bottom: -25vw;
+    border-radius: 5px;
 }
 
 .fleche{
     width: 25%;
     position: relative;
-    left: 20vw;
+    left: 36vw;
 }
 
 /* GIE */
@@ -426,12 +429,21 @@ button{
     color: #FAF7F5;
     background-color: rgb(25,74, 55);
     padding: 6%;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
+    margin-top: -5vw;
+    position: relative;
 }
 
 .gie_img{
-    width: 100%;
+    width: 105%;
+    border-radius: 5px;
+}
+
+.gie_video{
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 5vw;
 }
 
 /* PARRAINAGES */
