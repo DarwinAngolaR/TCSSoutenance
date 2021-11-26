@@ -30,6 +30,12 @@ p{
     width: 35%;
 }
 
+.video_acueil{
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 12vw;
+}
+
 .text_kalam{
     font-family: 'Kalam', cursive;
     font-weight: 300;
@@ -53,7 +59,8 @@ a{
     font-size: 1.5vw;
     font-weight: 400;
     letter-spacing: .1rem;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2)
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: -38vw;
 }
 
 #titre_tcs{
@@ -87,8 +94,8 @@ a{
     font-size: 1.5vw;
     font-weight: 400;
     letter-spacing: .1rem;
-    margin-left: 12%;
-    margin-bottom: 8%;
+    margin-left: 8%;
+    margin-bottom: 4%;
 }
 
 /* NOS ACTIONS */
@@ -96,7 +103,7 @@ a{
 .nos_actions{
     color: #FAF7F5;
     background-color: rgb(25,74, 55);
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 /* VOYAGES SOLIDAIRES */
@@ -113,7 +120,7 @@ a{
 
 .taille_text{
     width: 60%;
-    padding: 7%;
+    padding: 5% 7%;
     font-size: 1.5vw;
     line-height: 2.7rem;
 }
@@ -126,16 +133,21 @@ a{
 
 /* PARRAINAGES */
 
+.back_etoils{
+    background-image: url("/img/backsformRecurso 9@4x.png");
+    background-size: contain;
+}
+
 #parrainages{
     background-color: rgb(155, 214, 202, 0.25);
     padding: 3%;
 }
 
 #fond_vert{
-    background-color: rgb(25,74, 55, 0.9);
+    background-color: rgba(25,74, 55, 0.9);
     color:#FAF7F5;
     padding: 10%;
-    width: 70%;
+    width: 65%;
     border-radius: 10px;
     line-height: 1.8vw;
 }
@@ -156,12 +168,11 @@ a{
 }
 
 .img_width_gauche{
-    width: 50%;
+    width: 40%;
 }
 
 .img_width_droit{
-    width: 50%;
-    height: 575px;
+    width: 45%;
 }
 
 .img_width{
