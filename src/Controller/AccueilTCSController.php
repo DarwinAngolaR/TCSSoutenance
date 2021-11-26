@@ -29,4 +29,10 @@ class AccueilTCSController extends AbstractController
     {
         return $this->render('accueil_tcs/nos_actions.html.twig');
     }
+
+    #[Route('/agir_ensemble', name: 'agir_ensemble')]
+    public function agir_ensemble()
+    {
+        return $this->render('accueil_tcs/agir_ensemble.html.twig');
+    }
 }
