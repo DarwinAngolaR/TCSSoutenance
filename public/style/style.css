@@ -798,3 +798,29 @@ button{
 .margin_gauche{
     margin: 4vh 0 0 4vh;
 }
+
+.logos_senegal{
+    width: 25%;
+    padding: 5%;
+}
+
+.img_logo{
+    width: 100%;
+}
+
+/* P. FRANCE */
+
+.part_france{
+    width: 40%;
+    padding: 5%;
+    color: rgb(25,74, 55);
+    font-size: 1.3vw;
+    font-weight: 300;
+    border-radius: 5px;
+}
+
+.background_vert{
+    background-color: rgb(25,74, 55);
+}
+
+/* ADHESION */
