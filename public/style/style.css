@@ -366,7 +366,7 @@ button{
     letter-spacing: .2vw;
     position: relative;
     margin-bottom: 14vw;
-    top: 14vw;
+    top: 13.5vw;
 }
 
 /* Un BANC, UNE ARBRE */
@@ -662,12 +662,13 @@ button{
 }
 
 .block_gourmand{
-    width: 45%;
+    width: 40%;
+    padding: 6% 8% 5% 8%;
 }
 
 .block_gourmanGauche{
     width: 60%;
-    padding: 8%;
+    padding: 5%;
 }
 
 .text_gourman{
@@ -678,6 +679,40 @@ button{
     text-align: center;
     margin-left: -10vh;
 }
+.text_fruit{
+    width: 75%;
+    background-color: #FAF7F5;
+    opacity: .8;
+    margin: auto;
+    padding: 5%;
+    color: rgb(25,74, 55);
+    border-radius: 5px;
+    position: relative;
+    top: -1vw;
+}
+
+.titre_fruit{
+    font-weight: 600
+}
+
+#flech_droit{
+    height: 50px;
+    top: 40vw;
+    background-image: url("/img/flechdroitRecurso 9@4x.png") !important;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#flech_gauche{
+    background-image: url("/img/flechgaucheRecurso 10@4x.png") !important;
+    height: 50px;
+    top: 40vw;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 /*****/
 /**** PAGE AGIR ENSEMBLE *****/

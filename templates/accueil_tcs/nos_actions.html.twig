@@ -129,7 +129,7 @@
 </section>
 <div class="separateur_vert"></div>
 {# GOURMANDISES #}
-<section class="padding display_flex">
+<section class="display_flex">
 	<div class="block_gourmanGauche">
 		<h2 class="titre text_blue text_center space_bottom">les gourmandises du sine saloum</h2>
 		<div class="text_vert line_height">
@@ -144,38 +144,63 @@
 		</div>
 		<p class="text_vert text_gourman">Les « Gourmandises du Sine Saloum » ont vu le jour en 2015 pour valoriser et conserver ces fruits et légumes tout en réduisant les pertes après récolte.</p>
 	</div>
-	<div class="background_bleu block_gourman">
-		<div class="width_slider">
-			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="/img/Bananes.png" class="d-block w-100" alt="Bananes">
-					</div>
-					<div class="carousel-item">
-						<img src="/img/Bissap.png" class="d-block w-100" alt="Bissap">
-					</div>
-					<div class="carousel-item">
-						<img src="/img/Kinkeliba.png" class="d-block w-100" alt="Kinkeliba">
-					</div>
-					<div class="carousel-item">
-						<img src="/img/Mangues.png" class="d-block w-100" alt="Mangues">
-					</div>
-					<div class="carousel-item">
-						<img src="/img/Moringa.png" class="d-block w-100" alt="Moringa">
-					</div>
-					<div class="carousel-item">
-						<img src="/img/Noix_de_cajou.png" class="d-block w-100" alt="Noix de cajou">
+	<div class="background_bleu block_gourmand">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="/img/Bananes.png" class="d-block w-100" alt="Bananes">
+					<div class="text_fruit">
+						<p class="titre_fruit">Bananes</p>
+						<p>La banane séchée est un apport calorique idéal pour une activité physique car c’est un sucre lent et facile à digérer.
+							<br>
+							Elle se consommera également en apéritif ou en dessert, dans un gâteau ou simplement découpée en petits morceaux dans un yaourt ou müesli.</p>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="carousel-item">
+					<img src="/img/Bissap.png" class="d-block w-100" alt="Bissap">
+					<div class="text_fruit">
+						<p class="titre_fruit">Bissap</p>
+						<p>Ou L'hibicus sabdariffa est très riche en vitamine C et en antioxydants naturels excellents pour la santé et particulièrement pour lutter contre le vieillissement cellulaire. On lui prête des vertus diurétiques, sédatives et hypotensives. Il draine et détoxifie, facilite la digestion et réduit les troubles digestifs, régule le transit intestinal.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/Kinkeliba.png" class="d-block w-100" alt="Kinkeliba">
+					<div class="text_fruit">
+						<p class="titre_fruit">Kinkeliba</p>
+						<p>Appelé Tisane de longue vie, est traditionnellement utilisé pour favoriser la production de bile par le foie et faciliter la digestion. Le kinkéliba est riche en en catéchine, et en tanin, deux substances réputées pour leur propriétés hypotensives.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/Mangues.png" class="d-block w-100" alt="Mangues">
+					<div class="text_fruit">
+						<p class="titre_fruit">Mangues</p>
+						<p>Comme tous les fruits, est chargée d'antioxydants comme les polyphénols qui, selon certaines études, ont des propriétés anti cancéreuses., particulièrement pour les cancers du sein et du colon.
+							<br>Riche en vitamine C, la mangue favorise la production de collagène, indispensable pour une peau ferme.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/Moringa.png" class="d-block w-100" alt="Moringa">
+					<div class="text_fruit">
+						<p class="titre_fruit">Moringa</p>
+						<p>Est un petit arbre assez résistant à la sécheresse. Son feuillage a une teneur très intéressante en protéines (assimilables à 90%), en vitamine A, en vitamine C. Les feuilles contiennent également beaucoup de calcium, de fer et de potassium.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="/img/Noix_de_cajou.png" class="d-block w-100" alt="Noix de cajou">
+					<div class="text_fruit">
+						<p class="titre_fruit">Noix de cajou</p>
+						<p>Est riche en lipides et en acides aminés mono-insaturés, identiques à ceux de l’huile d’olive vierge extra. Elle est aussi riches en fibres pour le transit, et contient également des vitamines B, E et K mais aussi une quantité de glucides à l’index glycémique bas.</p>
+					</div>
+				</div>
 			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" id="flech_gauche">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" id="flech_droit">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
 	</div>
 </section>{% endblock %}
