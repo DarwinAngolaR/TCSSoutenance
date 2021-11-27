@@ -696,7 +696,7 @@ button{
 }
 
 #flech_droit{
-    height: 50px;
+    height: 3vw;
     top: 40vw;
     background-image: url("/img/flechdroitRecurso 9@4x.png") !important;
     background-size: 50%;
@@ -706,7 +706,7 @@ button{
 
 #flech_gauche{
     background-image: url("/img/flechgaucheRecurso 10@4x.png") !important;
-    height: 50px;
+    height: 3vw;
     top: 40vw;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -778,10 +778,48 @@ button{
     width: 100%;
 }
 
+.position_titre{
+    position: relative;
+    top: -7vw;
+    margin-bottom: -4vw;
+}
+
+.slider_soutiennent{
+    width: 45%;
+    background-color: rgb(25,74, 55);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.position_soutiennent{
+    position: relative;
+    top: -41vw;
+    margin-bottom: -44vw;
+}
+
+#flech_d_agirE{
+    height: 3vw;
+    top: 35vw;
+    background-image: url("/img/flechdroitRecurso 9@4x.png") !important;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#flech_g_agirE{
+    background-image: url("/img/flechgaucheRecurso 10@4x.png") !important;
+    height: 3vw;
+    top: 35vw;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* PARTENARIAT */
 
 .display_partenariat{
     justify-content: center;
+
 }
 
 .text_partenariat{
