@@ -51,16 +51,16 @@ a{
     background-color: rgb(25,74, 55, 0.9);
     color: #FAF7F5;
     position: relative;
-    top: -30vw;
-    left: 55vw;
+    top: -22vw;
+    left: 22vw;
     width: 40%;
-    padding: 70px;
+    padding: 5%;
     border-radius: 10px;
     font-size: 1.5vw;
     font-weight: 400;
     letter-spacing: .1rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    margin-bottom: -38vw;
+    margin-bottom: -26vw;
 }
 
 #titre_tcs{
@@ -76,11 +76,12 @@ a{
 
 .text_inline{
     display: inline;
-    line-height: 2.5rem;  /*verificar responsive */
+    line-height: 3vw;  /*verificar responsive */
 }
 
 .margin_video{
     padding: 5%;
+    margin-top: -5vw;
 }
 
 .text_resultat{
@@ -122,7 +123,7 @@ a{
     width: 60%;
     padding: 5% 7%;
     font-size: 1.5vw;
-    line-height: 2.7rem;
+    line-height: 4vw;
 }
 
 .position_voyages{
@@ -151,7 +152,7 @@ a{
 #fond_vert{
     background-color: rgba(25,74, 55, 0.9);
     color:#FAF7F5;
-    padding: 10%;
+    padding: 8%;
     width: 65%;
     border-radius: 10px;
     line-height: 1.8vw;
@@ -173,7 +174,7 @@ a{
 }
 
 .img_width_gauche{
-    width: 40%;
+    width: 45%;
 }
 
 .img_width_droit{
@@ -292,7 +293,7 @@ a{
     margin: 5% 0 15% 68%;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1.1vw;
     letter-spacing: 1px;
 }
 
@@ -316,7 +317,64 @@ button{
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 600px) {
+    
+    /* PARRAINAGES */
 
+
+    .parrainages_display{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .width_block{
+        width: 85%;
+    }
+
+    p{
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    .text_width{
+        font-size: 2.3vw;
+    }
+
+    .petite{
+        font-size: 2vw;
+    }
+
+    .back_etoils{
+        background-size: 70%;
+    }
+    /* NOS PARTENAIRES */
+    
+    .flex_xs{
+        flex-direction: column;
+    }
+
+    /* CONTATEZ-NOUS */
+
+    .display_contact{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img_enfant{
+        width: 67%;
+        max-height: 48vw;
+    }
+
+    .formulaire_blue{
+        padding: 5%;
+        font-size: 1.5vw;
+    }
+
+    .button_contact{
+        font-size: 1.5vw;
+    }
+
+}
 
 
 /*****/
@@ -717,6 +775,125 @@ button{
     background-position: center;
 }
 
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 600px) {
+
+    .p_header{
+        font-size: 1.7vw;
+    }
+
+    /* UN BANC UN ARBRE */
+
+    .video_banc_arbre{
+        width: 100%;
+    }
+
+    .img_chantal{
+        margin: 3vw 10vw;
+    }
+    .sous_titre{
+        margin-top: 12vw;
+    }
+    .arbre_baobab{
+        width: 30%;
+        top: 90vw;
+    }
+
+    h4{
+        font-size: 2.5vw;
+    }
+
+    /* PARRAINAGE */
+
+    .text_enf{
+        font-size: 2vw;
+    }
+
+    .img_dansant{
+        width: 70%;
+    }
+
+    .padding_left{
+        width: 100%;
+    }
+
+    .block_droitParrain{
+        width: 100%;
+    }
+
+    .text_educa{
+        width: 50%;
+        margin-left: 46vw;
+    }
+
+    .text_parrain{
+        margin-left: 50vw;
+        margin-top: 2vw;
+    }
+
+    .text_ecoles{
+        font-size: 4vw;
+    }
+
+    /* BOUTIQUE */
+
+    .text_nee{
+        left: 42vw;
+        top: -20vw;
+    }
+
+    .div_marcel{
+        top: -24vw;
+        margin-bottom: -8vw;
+        left: -3vw;
+    }
+
+    .div_icons{
+        width: 95%;
+    }
+
+    .text_aide, .text_besoin, .text_toit, .text_ecoleBui{
+        font-size: 2vw;
+    }
+
+    .back_img{
+        background-image: none;
+    }
+
+    .titreBS{
+        margin-left: 0vw;
+    }
+
+    /* GOURMANDISES */
+
+    .block_gourmanGauche{
+        width: 100%;
+    }
+
+    .block_gourmand{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10vw;
+    }
+
+    #flech_gauche, #flech_droit{
+        top: 75vw;
+    }
+
+    .text_gourman{
+        width: 100%;
+        margin-left: 0vw;
+        font-size: 2.2vw;
+    }
+
+    .line_height{
+        line-height: 2.2vw;
+    }
+}
+
+
 
 /*****/
 /**** PAGE AGIR ENSEMBLE *****/
@@ -959,4 +1136,87 @@ button{
 
 .pdf_margin{
     margin-left: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .div_agir{
+        width: 55%;
+        top: -23vw;
+        left: 45vw;
+        margin-bottom: -22vw;
+    }
+
+    .position_titre{
+        top: -12vw;
+        margin-bottom: -6vw;
+    }
+
+    .responsive_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider_soutiennent{
+        width: 100%;
+    }
+
+    .position_soutiennent{
+        top: -12vw;
+        left: -25vw;
+        margin-bottom: 0vw;
+    }
+
+    .div_porcent{
+        width: 55%;
+        left: 51vw;
+    }
+
+    .text_porcent, .text_porcent2{
+        font-size: 2vw;
+    }
+
+    .text_partenariat{
+        width: 100%;
+        font-size: 2vw;
+    }
+
+    h4, a{
+        font-size: 2.5vw !important;
+    }
+
+    .position_logoText{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logos_senegal{
+        width: 60%;
+    }
+
+    .part_senegal, .part_france{
+        width: 70%;
+        font-size: 2vw;
+    }
+
+    .position_logoTextDroit{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .space_around{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benevole{
+        width: 85%;
+    }
+
+    .titre_bene{
+        font-size: 2.3vw;
+    }
+
+    .telecharge{
+        margin: 6% 0;
+    }
 }
