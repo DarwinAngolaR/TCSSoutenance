@@ -214,7 +214,6 @@ a{
 .text-border{
     -webkit-text-stroke: 1px rgb(25,74, 55);
     color: transparent; 
-    margin-bottom: 5%;
 }
 
 .nos_partenaires{
@@ -782,6 +781,7 @@ button{
     position: relative;
     top: -7vw;
     margin-bottom: -4vw;
+    margin-left: 1vw;
 }
 
 .slider_soutiennent{
@@ -854,9 +854,9 @@ button{
 .part_senegal{
     background-color: rgb(25,74, 55);
     width: 40%;
-    padding: 5%;
+    padding: 4%;
     color: #FAF7F5;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 300;
     border-radius: 5px;
 }
@@ -881,6 +881,15 @@ button{
     width: 100%;
 }
 
+.position_logoText{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.paddingSlider{
+    padding: 4% 5% 0% 5%;
+}
+
 /* P. FRANCE */
 
 .part_france{
@@ -894,6 +903,14 @@ button{
 
 .background_vert{
     background-color: rgb(25,74, 55);
+}
+.position_logoTextDroit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.margin_topF{
+    text-align: right;
 }
 
 /* ADHESION */
