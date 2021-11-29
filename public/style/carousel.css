@@ -147,3 +147,7 @@
 .gallery-nav li.gallery-item-selected {
   background: #555;
 }
+
+.gallery-controls-add{
+  display: none !important;
+}

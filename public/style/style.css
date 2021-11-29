@@ -12,6 +12,15 @@ p{
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
+.img_logoAccueil{
+    width: 25% !important;
+}
+@media only screen and (max-width: 600px) {
+    .img_logoAccueil{
+        display: none;
+    }
+}
+
 /* ACCUEIL*/
 
 .titre{
@@ -241,7 +250,6 @@ a{
     padding: 3%;
     gap: 15%;
 }
-
 
 /*CONTACTEZ-NOUS*/
 
