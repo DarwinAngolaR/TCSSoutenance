@@ -35,4 +35,10 @@ class AccueilTCSController extends AbstractController
     {
         return $this->render('accueil_tcs/agir_ensemble.html.twig');
     }
+
+    #[Route('/qui_sommes_nous', name: 'qui_sommes_nous')]
+    public function qui_sommes_nous()
+    {
+        return $this->render('accueil_tcs/qui_sommes_nous.html.twig');
+    }
 }
