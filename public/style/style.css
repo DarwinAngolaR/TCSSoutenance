@@ -15,9 +15,14 @@ p{
 .img_logoAccueil{
     width: 25% !important;
 }
+
+.center{
+    text-align: center !important;
+}
+
 @media only screen and (max-width: 600px) {
     .img_logoAccueil{
-        display: none;
+        display: none !important;
     }
 }
 
