@@ -1,0 +1,152 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class="container mt-5">
+    
+		<h1 class="title p-1">{{article.title}}</h1>
+		<div class="img-fluid text-center">
+			<img width="60%" src="/assets/blog/images/{{article.image}}" alt="{{article.title}}"/>
+		</div>
+        <div class="tarif"><h2 class="title p-1">{{article.price}} € - {{article.duree}}</h2>
+        <h2 class="title p-1">Du {{article.depart| date("d/m/Y")}} au {{article.retour| date("d/m/Y")}}</h2>
+		</div>
+<div class="row justify-content-center pt-4">
+<div class="col-8">
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" data-bs-toggle="tab" href="#presentation">Présentation</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-bs-toggle="tab" href="#jour">Jour par Jour</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-bs-toggle="tab" href="#details">Détails Tarifs</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-bs-toggle="tab" href="#infopra">Infos Pratiques</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-bs-toggle="tab" href="#engagements">Nos engagements</a>
+			</li>
+
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade show active" id="presentation">
+            <div class="row d-flex justify-content-around">
+            <div class="col-6 ">
+				<p class="content text-justify">{{article.presentation | raw}}</p></div>
+<div class="col-5"><br>
+                <p><span class="voyages">Ce voyage comprend :</span>
+<ul>
+<li>Les transports sur place et aéroport</li>
+<li>La pension complète</li>
+<li>Les hébergements</li>
+<li>Les droits d'entrée dans les sites mentionnés dans le programme</li>
+<li>L'équipe d'encadrement</li></ul><p>
+
+<p><span class="voyages">Ce voyage ne comprend pas :</span>
+<p>
+<ul>
+<li>Les dépenses personnelles</li>
+<li>Les boissons (eau minérale, sodas, bière…)</li>
+<li>Les pourboires (facultatif et à votre convenance)</li></ul></p></div></div>
+
+			</div>
+			<div class="tab-pane fade" id="jour">
+				<p class="content text-justify">{{article.content | raw}}</p>
+			</div>
+			<div class="tab-pane fade" id="details">
+            <br>
+				<p>
+					<span class="voyages">Le prix du voyage</span>
+					comprend l’ensemble des prestations fournies par Le Flamboyant.</p>
+				<p>
+					<span class="voyages">L’inscription définitive</span>
+					est précédée d’un rendez vous permettant de connaître chacune des
+															parties et notamment les éventuelles compétences et aptitudes des participants, afin de déterminer le type de voyage qui lui
+															conviendra le mieux.</p>
+				<p>
+					<span class="voyages">Chaque client est informé</span>
+					que pour tous les circuits, un nombre minimum de participants est
+															nécessaire.</p>
+				<p>
+					<span class="voyages">La réservation</span>
+					se fait par le versement d’un acompte de 30 effectué 60 jours avant le
+															départ, le solde étant à régler à l’arrivée et en espèces</p>
+				<p>
+					<span class="voyages">Le change</span>
+					peut être effectué sur place par l’intermédiaire des organisateurs qui négocient le
+															taux</p>
+				<p>
+					<span class="voyages">CHACUN
+					</span>est tenu de prendre une assurance rapatriement et de nous en communiquer les
+															coordonnées en remplissant le bulletin d’inscription</p>
+
+			</div>
+			<div class="tab-pane fade" id="infopra">
+			<p><span class="voyages">Passeport :</span> En cours de validité et valable 6 mois après la date de retour. Pas de visa pour les
+français, Pour les autres nationalités, se renseigner auprès du consulat ou de l’ambassade concerné.</p>	
+			<p> <span class="voyages">IMPORTANT </span>Prévoir une photocopie du passeport (en cas de perte ou mettre une copie sur
+votre propre mail)</p>
+<p><span class="voyages">Billet avions aller retour : </span>Envoyer une copie du billet d’avion pour réserver la voiture et la
+personne qui vous accueille dans l’aéroport et communiquer les coordonnées d’une personne à joindre en cas d’urgence, les numéros d’assurance
+pour rapatriement.</p>
+<p><span class="voyages">Traitement médical : </span><br>La Malaria ou paludisme:<br>
+traitement préventif non obligatoire,. Si nécessaire, consultez votre médecin qui sera le meilleur juge
+pour vous conseiller tous les traitements en rapports avec votre situation personnelle.
+</p>
+<p><span class="voyages">Monnaie :</span> Franc CFA 10 000 FCFA 15 euros
+Prévoir le budget en espèces Changement en FCFA sur place au Sénégal
+ATTENTION PAS DE DISTRIBUTEUR BANCAIRE EN DEHORS DES GRANDES VILLES ( Kaolack, Mbour, Thies Saint Louis)
+<span class="voyages">Climat : </span>Climat tropical chaud et humide la saison des pluies (de JUILLET à OCTOBRE) connaît de puissants vents du sud est la saison sèche (de mi
+octobre à juillet) est dominée par le vent Harmattan, chaud et sec. La sécheresse au nord du pays s'aggrave d'années en années Les pluies
+sont plus abondantes dans le sud du pays (en Casamance) et le Sénégal oriental.
+</p><p>
+<span class="voyages">Internet</span>
+Possibilité de connexion internet dans des cybers des villages ou chez des partenaires locaux.</p><p>
+<span class="voyages">Téléphone : </span>Possibilité d’acheter une carte SIM orange (prévoir un tel
+débloqué) Environ 6 euros pour un abonnement d’une semaine pour une
+heure de communication pour la France</p>
+            </div>
+			<div class="tab-pane fade" id="engagements">
+				<br>
+				<p><span class="voyages">Nous nous engageons</span> à privilégier de petits groupes réunissant 6 à 10 personnes afin de
+				favoriser les rencontres et l’immersion dans une région loin du tourisme de masse Loin des préjugés, vous partagerez des évènements, des
+				rituels, des fêtes traditionnelles.</p>
+				<p><span class="voyages">Nous nous engageons</span> à vous faire rencontrer des acteurs de la vie locale pour profiter d’un temps de
+				partage et d’échanges pour s’enrichir mutuellement.</p>
+				<p><span class="voyages">Nous nous engageons</span> à rémunérer d’une manière équitable toutes les personnes locales travaillant
+				dans l’accueil des voyageurs.</p>
+				<p><span class="voyages">Nous nous engageons</span> à ce que la plupart des hébergements soient proches ou chez l’habitant,
+				dans des gites ou des campements villageois, en privilégiant les lieux tenus par des familles
+				sénégalaises</p>
+
+				<p><span class="voyages">Nous nous engageons</span> à vous fournir une information complète et précise notamment en
+				privilégiant le contact direct avec vous afin qu’une confiance mutuelle basée sur la transparence
+				s’installe de part et d’autre.</p>
+				<p><span class="voyages">Nous nous engageons</span> à financer des projets de développement mis en place avec l’association
+				Terres et Cultures Solidaires en lui reversant une partie du prix du voyage L’antenne française de
+				cette association est à Villeurbanne.</p>
+				<p><span class="voyages">Nous nous engageons</span> à ce que durant tout le voyage vous soyez accompagné d’un animateur
+				connaissant parfaitement la région visitée afin de vous permettre une meilleure approche de la
+				culture locale</p>
+				<p>A une époque où tous les prix sont tirés vers le bas, <span class="voyages">Nous nous engageons</span> à demeurer fidèles à
+				nos engagements pour rester un acteur de l’économie locale tout en faisant un tourisme utile à
+				tous.
+				</p>
+				<p>Grâce à notre réseau s’étendant aujourd’hui sur tout le Sénégal, <span class="voyages">Nous nous engageons</span> avec une
+				équipe d’acteurs locaux à vous faire découvrir un Sénégal authentique.</p>
+				<p><span class="voyages">Nous nous engageons</span>, à vous mettre en contact avec Terres et Cultures Solidaires pour vous aider,
+				si vous le désirez, à prolonger votre circuit en séjournant au centre Xam Xamlé afin de participer
+				à des projets de développement solidaires en apportant vos compétences et savoir faire Un
+				montant de 50 euros est reversé aux projets en cours sur la zone de FIMELA</p>
+
+
+			</div>
+
+		</div>
+	</div>
+    </div>
+
+{% endblock %}

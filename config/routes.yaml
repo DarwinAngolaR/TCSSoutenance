@@ -5,3 +5,7 @@
 # voyagesName:
 #   path: /voyages/{name}
 #   controller: App\Controller\VoyagesController::voyagesName
+
+# home:
+#   path: /home
+#   controller : App\Controller\HomeController::home

@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20211125220556 extends AbstractMigration
+final class Version20211128013121 extends AbstractMigration
 {
     public function getDescription(): string
     {
@@ -20,16 +20,14 @@ final class Version20211125220556 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE voyages ADD author_id INT NOT NULL');
-        $this->addSql('ALTER TABLE voyages ADD CONSTRAINT FK_30F7F9F675F31B FOREIGN KEY (author_id) REFERENCES user (id)');
-        $this->addSql('CREATE INDEX IDX_30F7F9F675F31B ON voyages (author_id)');
+        $this->addSql('ALTER TABLE article CHANGE created_at created_at DATETIME NOT NULL');
+        $this->addSql('ALTER TABLE user CHANGE created_at created_at DATETIME NOT NULL');
     }
 
     public function down(Schema $schema): void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE voyages DROP FOREIGN KEY FK_30F7F9F675F31B');
-        $this->addSql('DROP INDEX IDX_30F7F9F675F31B ON voyages');
-        $this->addSql('ALTER TABLE voyages DROP author_id');
+        $this->addSql('ALTER TABLE article CHANGE created_at created_at DATETIME DEFAULT CURRENT_TIMESTAMP');
+        $this->addSql('ALTER TABLE user CHANGE created_at created_at DATETIME DEFAULT CURRENT_TIMESTAMP');
     }
 }

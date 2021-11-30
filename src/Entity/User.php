@@ -2,15 +2,23 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
+use App\Entity\Article;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\UserRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @uniqueEntity(
+ * fields = {"email"},
+ * message = "L'email mentionné est déjà utilisé"
+ * )
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -20,29 +28,41 @@ class User
     private $id;
 
     /**
+     * @Assert\Length(min=3, max=50)
      * @ORM\Column(type="string", length=255)
      */
     private $username;
 
     /**
+     * @Assert\Length(min=3, max=50)
      * @ORM\Column(type="string", length=255)
      */
     private $firstname;
 
     /**
+     * @Assert\Length(min=3,max=50)
      * @ORM\Column(type="string", length=255)
      */
     private $lastname;
 
     /**
+     * @Assert\Email(message = "La valeur tapée dans le champs email ne semble pas être une adresse mail valide")
      * @ORM\Column(type="string", length=255)
      */
     private $email;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+     
+        /**
+        * @Assert\Length(min=4,max=50)
+        * @ORM\Column(type="string", length=255)
+        */
     private $password;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity=Article::class, mappedBy="author")
+     */
+    private $articles;
 
     /**
      * @ORM\Column(type="datetime")
@@ -50,13 +70,28 @@ class User
     private $createdAt;
 
     /**
-     * @ORM\OneToMany(targetEntity=Voyages::class, mappedBy="author")
+     * @Assert\EqualTo(propertyPath="password", message="Les deux mots de passe doivent être identiques")
      */
-    private $voyages;
+
+    private  $passwordConfirm;
+
+    public function getPasswordConfirm(): ?string
+    {
+        return $this->passwordConfirm;
+    }
+
+    public function setPasswordConfirm(string $passwordConfirm): self
+    {
+        $this->passwordConfirm = $passwordConfirm;
+
+        return $this;
+    }
+    
 
     public function __construct()
     {
-        $this->voyages = new ArrayCollection();
+        $this->articles = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     public function getId(): ?int
@@ -67,6 +102,11 @@ class User
     public function getUsername(): ?string
     {
         return $this->username;
+    }
+
+    public function __toString()
+    {
+        return $this->firstname." " .$this->lastname;
     }
 
     public function setUsername(string $username): self
@@ -123,6 +163,36 @@ class User
 
         return $this;
     }
+    
+    /**
+     * @return Collection|Article[]
+     */
+    public function getArticles(): Collection
+    {
+        return $this->articles;
+    }
+
+    public function addArticle(Article $article): self
+    {
+        if (!$this->articles->contains($article)) {
+            $this->articles[] = $article;
+            $article->setAuthor($this);
+        }
+
+        return $this;
+    }
+
+    public function removeArticle(Article $article): self
+    {
+        if ($this->articles->removeElement($article)) {
+            // set the owning side to null (unless already changed)
+            if ($article->getAuthor() === $this) {
+                $article->setAuthor(null);
+            }
+        }
+
+        return $this;
+    }
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
@@ -136,33 +206,21 @@ class User
         return $this;
     }
 
-    /**
-     * @return Collection|Voyages[]
-     */
-    public function getVoyages(): Collection
+    public function getRoles()
     {
-        return $this->voyages;
+        return ['ROLE_USER'];
+    }   
+
+    public function getSalt()
+    {
+        
     }
 
-    public function addVoyage(Voyages $voyage): self
+    public function eraseCredentials()
     {
-        if (!$this->voyages->contains($voyage)) {
-            $this->voyages[] = $voyage;
-            $voyage->setAuthor($this);
-        }
-
-        return $this;
     }
-
-    public function removeVoyage(Voyages $voyage): self
+    public function getUserIdentifier()
     {
-        if ($this->voyages->removeElement($voyage)) {
-            // set the owning side to null (unless already changed)
-            if ($voyage->getAuthor() === $this) {
-                $voyage->setAuthor(null);
-            }
-        }
-
-        return $this;
+        return $this->getId();
     }
 }

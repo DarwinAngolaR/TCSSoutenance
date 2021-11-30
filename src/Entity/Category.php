@@ -35,13 +35,13 @@ class Category
     private $image;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Voyages::class, mappedBy="category")
+     * @ORM\ManyToMany(targetEntity=Article::class, mappedBy="category")
      */
-    private $voyages;
+    private $articles;
 
     public function __construct()
     {
-        $this->voyages = new ArrayCollection();
+        $this->articles = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -53,13 +53,18 @@ class Category
     {
         return $this->title;
     }
-
+    public function __toString()
+    {
+        return $this->title;
+    }
     public function setTitle(string $title): self
     {
         $this->title = $title;
 
         return $this;
     }
+
+
 
     public function getDescription(): ?string
     {
@@ -86,27 +91,27 @@ class Category
     }
 
     /**
-     * @return Collection|Voyages[]
+     * @return Collection|Article[]
      */
-    public function getVoyages(): Collection
+    public function getArticles(): Collection
     {
-        return $this->voyages;
+        return $this->articles;
     }
 
-    public function addVoyage(Voyages $voyage): self
+    public function addArticle(Article $article): self
     {
-        if (!$this->voyages->contains($voyage)) {
-            $this->voyages[] = $voyage;
-            $voyage->addCategory($this);
+        if (!$this->articles->contains($article)) {
+            $this->articles[] = $article;
+            $article->addCategory($this);
         }
 
         return $this;
     }
 
-    public function removeVoyage(Voyages $voyage): self
+    public function removeArticle(Article $article): self
     {
-        if ($this->voyages->removeElement($voyage)) {
-            $voyage->removeCategory($this);
+        if ($this->articles->removeElement($article)) {
+            $article->removeCategory($this);
         }
 
         return $this;
