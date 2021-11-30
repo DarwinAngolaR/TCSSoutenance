@@ -20,6 +20,10 @@ p{
     text-align: center !important;
 }
 
+#color_menu{
+    color: rgb(155, 214, 202);
+}
+
 @media only screen and (max-width: 600px) {
     .img_logoAccueil{
         display: none !important;
@@ -36,7 +40,7 @@ p{
     letter-spacing: .3vw;
 }
 
-.phrase_accueil{
+#phrase_accueil{
     color: #FAF7F5;
     position: relative;
     top: -55vw;
