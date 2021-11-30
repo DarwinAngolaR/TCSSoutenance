@@ -1,0 +1,49 @@
+h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+h3, h5{
+    text-align: center;
+}
+
+li>a{
+    text-decoration: none;
+}
+
+.card-body>a{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 25%;
+    margin: auto;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+
+h6{
+    margin-left:10px;
+    color: #e95420;
+    margin-top: 10px;
+}
+
+span.voyages{
+    font-weight: bold;
+    color: #e95420;
+    
+
+}
+
+#details,#infopra,#jour,#engagements,#presentation{
+    padding-left:15px;
+}
+
+.tarif{
+    text-align: center;
+}

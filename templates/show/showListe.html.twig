@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Voyages solidaires{% endblock %}
+
+{% block body %}
+<h1 class="title p-1 text-center">Nos Voyages Solidaires . {{category.title}}</h1>
+
+<div class="row">
+
+    <div class="col-md-8">
+      <div class="row">
+      {% for article in articles %}
+
+      <div class="card mb-3">
+  <h3 class="card-header">{{article.title}}</h3>
+  <div class="card-body">
+    
+    
+  </div>
+  <img class="card-img-top" src="/assets/blog/images/{{article.image}}" alt="{{article.title}}">
+  <div class="card-body">
+  <h5>{{article.introduction}}</h5>
+    <a href="{{path('show', {'id':article.id})}}" class="btn btn-primary">En savoir plus</a>
+  </div>
+  
+  <div class="card-body">
+    
+  </div>
+  <div class="card-footer text-muted">
+    {# <p class="date">Voyage mis à jour le {{article.createdAt | date("d/m/Y")}} #}
+  </div>
+</div>
+
+              {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-4">
+    <h2>Catégories</h2>
+    <ul class="list-group">
+    {% for category in categories %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="{{path('show_article',{'id':category.id})}}"> {{category.title}}
+    <span class="badge bg-primary rounded-pill">{{category.articles | length}} voyage(s)</span>
+  </a>
+  </li>
+    {% endfor %}
+  
+  
+</ul>
+    </div>
+
+          
+</div>
+
+{% endblock %}

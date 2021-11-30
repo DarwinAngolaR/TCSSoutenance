@@ -1,3 +1,11 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+# voyages:
+#     path: /voyages
+#     controller: App\Controller\VoyagesController::voyages
+
+# voyagesName:
+#   path: /voyages/{name}
+#   controller: App\Controller\VoyagesController::voyagesName
+
+# home:
+#   path: /home
+#   controller : App\Controller\HomeController::home
