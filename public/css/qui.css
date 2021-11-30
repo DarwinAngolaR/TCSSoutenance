@@ -250,18 +250,20 @@ h3{
 .bas_bloc5_gauche{
     text-align: center;
     width: 55%;
-}
-/* bas bloc 5 droite */
-.bas_bloc5_droite{
-    display: flex;
-    justify-content: right;
-    width: 30%;
-}
-#obj{
     color: #FAF7F5;
     font-family: "kalam", cursive; 
+    font-size: 2vw;
 }
+/* bas bloc 5 droite */
+
 #arbre{
-    width: 250px;
-    height:300px;
+    width: 35%;}
+
+@media only screen and (max-width: 600px) {
+
+    .bac_bloc5{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
