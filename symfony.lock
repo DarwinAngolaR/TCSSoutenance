@@ -614,11 +614,7 @@
         ]
     },
     "symfony/webpack-encore-bundle": {
-<<<<<<< HEAD
-        "version": "1.12",
-=======
         "version": "1.13",
->>>>>>> b93f384498a6ded0b6f12f3731cb14b89de22318
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",

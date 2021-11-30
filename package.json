@@ -1,10 +1,7 @@
 {
     "devDependencies": {
         "@symfony/stimulus-bridge": "^2.0.0",
-<<<<<<< HEAD
-=======
         "@symfony/ux-dropzone": "file:vendor/symfony/ux-dropzone/Resources/assets",
->>>>>>> b93f384498a6ded0b6f12f3731cb14b89de22318
         "@symfony/webpack-encore": "^1.0.0",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
