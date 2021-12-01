@@ -13,10 +13,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @uniqueEntity(
- * fields = {"email"},
- * message = "L'email mentionné est déjà utilisé"
- * )
+ * @UniqueEntity(fields={"email"}, message="L'email mentionné est déjà utilisé")
  */
 class User implements UserInterface
 {
@@ -74,6 +71,11 @@ class User implements UserInterface
      */
 
     private  $passwordConfirm;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isVerified = false;
 
     public function getPasswordConfirm(): ?string
     {
@@ -222,5 +224,17 @@ class User implements UserInterface
     public function getUserIdentifier()
     {
         return $this->getId();
+    }
+
+    public function isVerified(): bool
+    {
+        return $this->isVerified;
+    }
+
+    public function setIsVerified(bool $isVerified): self
+    {
+        $this->isVerified = $isVerified;
+
+        return $this;
     }
 }

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SecurityController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
 
@@ -32,8 +32,6 @@
     <div class="col-12">
     {{form_row(form.passwordConfirm,{'label' : "Confirmez votre mot de passe : ", 'attr':{'placeholder' : "Confirmation de votre mot de passe..."}})}}
     </div>
-    </div>
-
     <button type="submit" class="btn btn-success">S'inscrire</button>
 
     {{form_end(form)}}

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+<div class="container mt-5">
+    <h1>Enregistrement</h1>
+
+    {{ form_start(registrationForm) }}
+    <div class="row">
+    <div class="col md-4">
+        {{ form_row(registrationForm.username,{'label' : "Nom d'utilisateur : ", 'attr':{'placeholder' : "Votre nom d'utilisateur..."}})}}
+        </div>
+    <div class="col md-4">
+        
+        {{ form_row(registrationForm.firstname,{'label' : "Prénom : ", 'attr':{'placeholder' : "Votre prénom..."}})}}
+        </div>
+    <div class="col md-4">
+        
+        {{ form_row(registrationForm.lastname,{'label' : "Nom : ", 'attr':{'placeholder' : "Votre nom..."}})}}
+       </div>
+    </div>
+       <div class="row">
+    <div class="col-12">
+        {{ form_row(registrationForm.email,{'label' : "Email : ", 'attr':{'placeholder' : "Votre adresse mail..."}})}}
+       </div>
+       <div class="col-12">
+        {{ form_row(registrationForm.plainPassword,{'label' : "Mot de passe : ", 'attr':{'placeholder' : "Votre mot de passe..."}})}}
+    </div><br><br>
+    <div class="row mt-3 justify-content-center">
+       <div class="col-2">
+        {{ form_row(registrationForm.agreeTerms) }}
+        </div>
+        <div class="col-4">
+        <a href="{{path('cgu_conditions')}}" target="_blank">Merci de lire les Conditions Générales d'Utilisation</a>
+</div>
+</div>
+
+<div class="col-3"><br>
+        <button type="submit" class="btn btn-success">S'enregistrer</button>
+        </div>
+    {{ form_end(registrationForm) }}
+</div>
+
+{% endblock %}

@@ -5,7 +5,12 @@
 	<div class="container mt-5">
     
 		<h1 class="title p-1">{{article.title}}</h1>
-		<div class="img-fluid text-center">
+		<div class="row text-center">
+		<div class="col-12 justify-center">
+		<a href="{{path('contact')}}" class="btn btn-primary">Nous contacter</a>
+		</div>
+		</div>
+		<div class="img-fluid text-center mt-5">
 			<img width="60%" src="/assets/blog/images/{{article.image}}" alt="{{article.title}}"/>
 		</div>
         <div class="tarif"><h2 class="title p-1">{{article.price}} € - {{article.duree}}</h2>
