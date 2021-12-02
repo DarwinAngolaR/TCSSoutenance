@@ -259,13 +259,30 @@ h3{
 /* bas bloc 5 droite */
 
 #arbre{
-    width: 70%;
+    width: 15%;
 }
 
 @media only screen and (max-width: 600px) {
 
     .bac_bloc5{
         flex-direction: column;
+    }
+
+    .gauche_bloc4{
+        width: 100%;
+    }
+
+    .milieu_bloc4{
+        position: relative;
+        top: 15vw;
+    }
+
+    video{
+        display: none;
+    }
+
+    .milieu_bloc5_droite{
+        width: 100%;
     }
 
 }
